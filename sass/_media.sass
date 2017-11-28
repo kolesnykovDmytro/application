@@ -1,0 +1,262 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	.fixed-phone
+		top: 14%
+		left: 6%
+		max-width: 550px
+	.image-slide
+		width: 550px
+	section
+		&:before
+			top: 145px
+			left: 7.3%
+
+@media only screen and (max-width : 1420px)
+	.fixed-phone
+		.fixed-slides
+			width: 522px
+	.main
+		.content
+			.main-title
+				width: 40%
+				p
+					font-size: 20px
+				h1
+					font-size: 1.75rem
+					span
+						font-size: 5.31rem
+				.btn__download
+					flex-direction: column
+	.fixed-phone
+		top: 14%
+		left: 6%
+		max-width: 430px
+	.image-slide
+		width: 430px
+	.games
+		.wrap__page
+			.games-sub__text
+				font-size: 18px
+			.content
+				width: 35%
+			ul
+				li
+					margin-bottom: 20px
+					p
+						span
+							&:first-child
+								font-size: 24px
+	.result
+		.content
+			ul
+				li
+					margin-bottom: 20px
+	.section__title
+		font-size: 36px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	.start
+		.wrap__page 
+			.main-footer
+				.video-content
+					top: 0
+	.btn__download
+		&:before
+			display: none
+	.wrap__page
+		font-size: 16px
+	.games
+		.wrap__page
+			ul
+				li
+					&:before
+						display: none
+			.content
+				width: 43%
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.prize
+		.content
+			height: 48vh
+			width: 50%
+	.fixed-phone
+		display: none
+	.main
+		.content
+			.main-title
+				width: 70%
+	.help
+		.wrap__page
+			padding-top: 5px
+			.content
+				.help-text
+					width: 100%
+					.text-inner
+						padding: 0
+						border: 0
+	.result
+		.wrap__page
+			padding-top: 30px
+		.content
+			width: 95%
+	.games
+		.wrap__page
+			padding-top: 30px
+			.content
+				width: 100%
+	.start
+		.wrap__page
+			padding-top: 100px
+			.content
+				padding: 0 5px
+				.start-text
+					flex-basis: 48%
+				.btn__download
+					margin-top: 5%
+					flex-basis: 100%
+			.main-footer
+				flex-direction: column
+				.video-content
+					width: 100%
+	section
+		&:before
+			display: none
+
+	.main-header
+		top: 1%
+		left: 1%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+	section
+		&:before
+			display: none
+	.main
+		.wrap__page
+			padding-top: 35px
+	.main
+		.content
+			flex-wrap: wrap
+			.main-video
+				order: 1
+				width: 100%
+				.btn-video
+					width: 63px
+					height: 63px
+					margin-top: 40px
+				.video-text
+					font-size: 14px
+					transform: rotate(0deg)
+					margin-top: 10px
+					&:after
+						display: none
+			.main-title
+				width: 100%
+				.btn__download
+					margin-top: 25px
+					flex-direction: row
+					flex-wrap: wrap
+			.main .wrap__page
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 500px)
+	.main
+		.content
+			.main-title
+				h1
+					span
+						font-size: 4.31rem
+	.btn__download
+		.item-download
+			width: 90px
+			height: 29px
+			margin: 0 10px 10px 0
+		.icon-apple
+			background: url(../img/mobile-icon-ap.png) no-repeat top center
+			background-size: cover
+		.icon-google
+			background: url(../img/mobile-icon-gl.png) no-repeat top center
+			background-size: cover
+		.icon-web
+			background: url(../img/mobile-icon-web.png) no-repeat top center
+			background-size: cover
+	.prize
+		.content
+			height: 100%
+			width: 100%
+			padding-top: 30px
+	.start
+		.wrap__page
+			.content
+				.start-text
+					display: none
+				.btn__download
+					justify-content: center
+					.icon-apple
+						margin-right: 20px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 425px)
+	.section__title
+		margin-bottom: 0
+	.games
+		.wrap__page
+			ul
+				li
+					margin-bottom: 5px
+					&:first-child
+						display: none
+			.games-sub__text
+				font-size: 12px
+	.result-text__bottom
+		display: none
+	.wrap__page
+		font-size: 14px
+	.help
+		.wrap__page
+			.content
+				.help-text
+					padding-top: 30px
+					p
+						margin-bottom: 20px
+					h2
+						font-size: 30px
+						span
+							font-size: 36px
+	.result
+		.content
+			.result-text__top
+				margin: 20px 0 10px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
